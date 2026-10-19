@@ -6,7 +6,7 @@
 
 Tracker para seguir un plan de consolidación de inglés de **A2 a B1** en 8 semanas. Cada semana gira en torno a una estructura gramatical que se escucha el lunes, se detecta el miércoles y se escribe el viernes. La app guarda tu progreso, tu diario semanal y tus frases para Anki, y genera prompts de IA adaptados a tus errores.
 
-**Demo:** https://consolida.46-225-102-225.sslip.io
+**Demo:** https://consolida.deras.dev
 
 ## Funcionalidades
 
@@ -150,7 +150,7 @@ ln -s /etc/nginx/sites-available/consolida /etc/nginx/sites-enabled/consolida &&
 ```
 
 ```bash
-certbot --nginx -d consolida.46-225-102-225.sslip.io
+certbot --nginx -d consolida.deras.dev
 ```
 
 Arranca la app:
