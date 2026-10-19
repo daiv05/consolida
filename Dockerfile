@@ -1,4 +1,4 @@
-FROM node:24-bookworm-slim AS build
+FROM node:26-bookworm-slim AS build
 RUN apt-get update \
  && apt-get install -y --no-install-recommends python3 make g++ \
  && rm -rf /var/lib/apt/lists/*
@@ -8,7 +8,7 @@ RUN npm ci --no-audit --no-fund --ignore-scripts && npm rebuild better-sqlite3 e
 COPY . .
 RUN npx nuxt prepare && npm run build
 
-FROM node:24-bookworm-slim AS runtime
+FROM node:26-bookworm-slim AS runtime
 LABEL org.opencontainers.image.source="https://github.com/daiv05/consolida" \
       org.opencontainers.image.description="Consolida: tracker del plan de inglés A2–B1" \
       org.opencontainers.image.licenses="MIT"
