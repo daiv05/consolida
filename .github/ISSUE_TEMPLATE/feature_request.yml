@@ -1,0 +1,19 @@
+name: Idea o mejora
+description: Propón algo nuevo para el plan o la app.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Qué necesitas
+      description: El problema que tienes o lo que te gustaría poder hacer.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Cómo lo imaginas
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativas que consideraste
