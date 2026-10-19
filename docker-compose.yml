@@ -1,0 +1,21 @@
+name: consolida
+
+services:
+  app:
+    image: ghcr.io/daiv05/consolida:${CONSOLIDA_TAG:-latest}
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "127.0.0.1:${CONSOLIDA_PORT:-7150}:3000"
+    volumes:
+      - data:/data
+    mem_limit: 384m
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: "3"
+
+volumes:
+  data:
