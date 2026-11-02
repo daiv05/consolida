@@ -21,8 +21,8 @@
   "dependencies": {
     "better-sqlite3": "^13.0.3",
     "drizzle-orm": "^0.45.4",
-    "nuxt": "^4.6.2",
-    "nuxt-auth-utils": "^0.5.32",
+    "nuxt": "^4.6.3",
+    "nuxt-auth-utils": "^0.5.34",
     "zod": "^4.6.7"
   },
   "devDependencies": {
